@@ -2,20 +2,33 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="411.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipap.oppo.HelloController">
+<AnchorPane prefHeight="443.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipap.oppo.HelloController">
    <children>
-      <Button fx:id="minus" layoutX="134.0" layoutY="309.0" mnemonicParsing="false" onAction="#minus" prefHeight="35.0" prefWidth="70.0" text="-" />
-      <Button fx:id="summa" layoutX="14.0" layoutY="309.0" mnemonicParsing="false" onAction="#summa" prefHeight="35.0" prefWidth="70.0" text="+" />
-      <Label layoutX="14.0" layoutY="239.0" prefHeight="25.0" prefWidth="70.0" text="  a" />
+      <Button fx:id="minus" layoutX="107.0" layoutY="309.0" minWidth="44.0" mnemonicParsing="false" onAction="#minus" prefHeight="35.0" prefWidth="44.0" text="-" textFill="#1a42c6">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Button fx:id="summa" layoutX="14.0" layoutY="309.0" mnemonicParsing="false" onAction="#summa" prefHeight="35.0" prefWidth="54.0" text="+" textFill="#b7c610" />
+      <Label layoutX="24.0" layoutY="239.0" prefHeight="25.0" prefWidth="70.0" text="  a" />
    
-          <Label layoutX="135.0" layoutY="234.0" prefHeight="35.0" prefWidth="85.0" text="  b" />
-      <Button fx:id="divide" layoutX="139.0" layoutY="81.0" mnemonicParsing="false" onAction="#divide" prefHeight="35.0" prefWidth="60.0" text="/" />
-      <Button fx:id="multiplay" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#multiplay" prefHeight="35.0" prefWidth="70.0" text="*" />
+          <Label layoutX="114.0" layoutY="234.0" prefHeight="35.0" prefWidth="85.0" text="  b" />
+      <Button fx:id="divide" layoutX="115.0" layoutY="81.0" minWidth="44.0" mnemonicParsing="false" onAction="#divide" prefHeight="35.0" prefWidth="44.0" text="/" textFill="#13cd79" />
+      <Button fx:id="multiplay" layoutX="14.0" layoutY="81.0" minWidth="50.0" mnemonicParsing="false" onAction="#multiplay" prefHeight="35.0" prefWidth="50.0" text="*" textFill="#bf129a" />
        <Label fx:id="Labelres" layoutX="59.0" layoutY="29.0" prefHeight="26.0" prefWidth="137.0" text="result: " />
-      <Label fx:id="txtA" layoutX="7.0" layoutY="159.0" prefHeight="59.0" prefWidth="85.0" text=" " />
-      <Label fx:id="txtB" layoutX="143.0" layoutY="159.0" prefHeight="59.0" prefWidth="85.0" text=" " />
+      <TextField fx:id="txtA" layoutX="14.0" layoutY="167.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="txtB" layoutX="99.0" layoutY="167.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="txtC" layoutX="204.0" layoutY="167.0" prefHeight="26.0" prefWidth="70.0" />
+      <Label layoutX="219.0" layoutY="234.0" prefHeight="35.0" prefWidth="41.0" text="с" />
+      <Button fx:id="area" layoutX="213.0" layoutY="81.0" minWidth="44.0" mnemonicParsing="false" onAction="#area" prefHeight="35.0" prefWidth="44.0" text="S" textFill="#d01a2c">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="AreaFigures" layoutX="52.0" layoutY="379.0" mnemonicParsing="false" onAction="#AreaFigures" text="RadioButton" textFill="#5e229e" AnchorPane.rightAnchor="100.0" />
    </children>
 </AnchorPane>
